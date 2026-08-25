@@ -11,6 +11,7 @@ It takes ~30 sec to make each move - hence the name.   I would say it's playing 
 - Depth-5 plies Negamax search with alpha-beta pruning
 - Move ordering that prioritizes captures, pawn promotions, and castling
 - Piece-square table evaluation for material and positional scoring
+- ai_vs_ai_game_log.txt contains the move log for the 9 hour match played by bot against itself, may be hepful for debugging existing bugs.
 
 ## Requirements
 

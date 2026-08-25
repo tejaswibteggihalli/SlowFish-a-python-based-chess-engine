@@ -12,6 +12,7 @@ It takes ~30 sec to make each move - hence the name.   I would say it's playing 
 - Move ordering that prioritizes captures, pawn promotions, and castling
 - Piece-square table evaluation for material and positional scoring
 - ai_vs_ai_game_log.txt contains the move log for the 9 hour match played by bot against itself, may be hepful for debugging existing bugs.
+- output.mp4 contains the game played by the bot against itself. (Depth = 5 plies, Qsearch depth = 6 plies for this particular game)
 
 ## Requirements
 

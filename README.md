@@ -17,23 +17,45 @@ It takes ~30 sec to make each move - hence the name.   I would say it's playing 
 ## Requirements
 
 - Python 3.9+
-- pygame
+- pygame-ce (provides the `pygame` module used by the game)
 
 ## Installation
 
 1. Clone or download this repository.
-2. (Recommended) Create and activate a virtual environment:
+2. (Recommended) Create and activate a virtual environment. Use the activation
+   command for your shell:
 
    ```bash
    python -m venv venv
-   source venv/bin/activate      # Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies:
+   Linux/macOS:
 
    ```bash
-   pip install -r requirements.txt
+   source venv/bin/activate
    ```
+
+   Windows Command Prompt:
+
+   ```bat
+   venv\Scripts\activate.bat
+   ```
+
+   Windows PowerShell:
+
+   ```powershell
+   .\venv\Scripts\Activate.ps1
+   ```
+
+3. Install dependencies using the Python interpreter from the active
+   environment:
+
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements.txt
+   ```
+
+   To confirm pygame installed, run `python -c "import pygame; print(pygame.version.ver)"`.
 
 4. Make sure the `images/` (piece icon) folder is present in the project root alongside `ChessMain.py` — the GUI loads piece sprites from there at startup.
 
